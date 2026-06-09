@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "name": "Naive Bayes (TF-IDF)",
+      "accuracy": 0.9821,
+      "precision": 0.9778,
+      "recall": 0.8859,
+      "f1": 0.9296,
+      "cv_f1": 0.944,
+      "confusion_matrix": [
+        [
+          963,
+          3
+        ],
+        [
+          17,
+          132
+        ]
+      ],
+      "train_time_ms": 77.0
+    },
+    {
+      "name": "Complement NB (TF-IDF)",
+      "accuracy": 0.983,
+      "precision": 0.9221,
+      "recall": 0.953,
+      "f1": 0.9373,
+      "cv_f1": 0.9137,
+      "confusion_matrix": [
+        [
+          954,
+          12
+        ],
+        [
+          7,
+          142
+        ]
+      ],
+      "train_time_ms": 81.0
+    },
+    {
+      "name": "Logistic Regression (TF-IDF bigrams)",
+      "accuracy": 0.9839,
+      "precision": 0.9925,
+      "recall": 0.8859,
+      "f1": 0.9362,
+      "cv_f1": 0.9308,
+      "confusion_matrix": [
+        [
+          965,
+          1
+        ],
+        [
+          17,
+          132
+        ]
+      ],
+      "train_time_ms": 228.0
+    },
+    {
+      "name": "SVM / LinearSVC (TF-IDF bigrams)",
+      "accuracy": 0.9865,
+      "precision": 0.9855,
+      "recall": 0.9128,
+      "f1": 0.9477,
+      "cv_f1": 0.9434,
+      "confusion_matrix": [
+        [
+          964,
+          2
+        ],
+        [
+          13,
+          136
+        ]
+      ],
+      "train_time_ms": 157.1
+    },
+    {
+      "name": "Naive Bayes (Count Vectors)",
+      "accuracy": 0.9839,
+      "precision": 0.9645,
+      "recall": 0.9128,
+      "f1": 0.9379,
+      "cv_f1": 0.9496,
+      "confusion_matrix": [
+        [
+          961,
+          5
+        ],
+        [
+          13,
+          136
+        ]
+      ],
+      "train_time_ms": 154.4
+    }
+  ],
+  "best_model": "SVM / LinearSVC (TF-IDF bigrams)",
+  "dataset_size": 5572,
+  "spam_count": 747,
+  "ham_count": 4825,
+  "top_features": [
+    [
+      "txt",
+      2.5752894593327627
+    ],
+    [
+      "call",
+      1.848995102809934
+    ],
+    [
+      "uk",
+      1.6820526538840348
+    ],
+    [
+      "text",
+      1.6715477862515071
+    ],
+    [
+      "reply",
+      1.601677099652942
+    ],
+    [
+      "150p",
+      1.504938973341568
+    ],
+    [
+      "mobile",
+      1.490166920867935
+    ],
+    [
+      "ringtone",
+      1.4283349932564509
+    ],
+    [
+      "claim",
+      1.4149465468582554
+    ],
+    [
+      "service",
+      1.3003459774803507
+    ],
+    [
+      "50",
+      1.2593494529035283
+    ],
+    [
+      "won",
+      1.2436055657364935
+    ],
+    [
+      "free",
+      1.1818647043968484
+    ],
+    [
+      "18",
+      1.174909471405994
+    ],
+    [
+      "chat",
+      1.1697856512569917
+    ],
+    [
+      "stop",
+      1.0942541658351304
+    ],
+    [
+      "500",
+      1.077729463528374
+    ],
+    [
+      "win",
+      1.0501474873424521
+    ],
+    [
+      "prize",
+      1.001474870252858
+    ],
+    [
+      "have won",
+      0.9860880682912528
+    ]
+  ]
+}
